@@ -5,12 +5,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text: #000000;
+    --background: #FFFFFF;
+    --primary: #8C1D40;
+    --secondary: #FFC627;
+    --accent: #78BE20;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 /* Header */
@@ -21,13 +31,14 @@ header {
 }
 
 .logo {
-    border: 2px solid black;
+    border: 2px solid var(--primary);
     width: 100px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    background-color: var(--background);
 }
 
 .logo img {
@@ -37,7 +48,9 @@ header {
 }
 
 .header-title {
-    border: 2px solid black;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--background);
     flex: 1;
     display: flex;
     align-items: center;
@@ -66,17 +79,25 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
     padding: 15px;
     text-align: center;
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: var(--text);
+    background-color: var(--secondary);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary);
+    color: var(--background);
+    border-color: var(--primary);
 }
 
 /* Hero Section */
 .hero {
-    border: 2px solid black;
+    border: 2px solid var(--primary);
     padding: 0;
     text-align: center;
     margin-bottom: 20px;
@@ -99,14 +120,16 @@ nav ul li a {
 /* Main Content */
 main {
     flex: 2;
-    border: 3px solid black;
+    border: 3px solid var(--primary);
     padding: 15px;
+    background-color: var(--background);
 }
 
 main section {
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
     padding: 20px;
     margin-bottom: 15px;
+    background-color: var(--background);
 }
 
 main section:last-child {
@@ -115,6 +138,8 @@ main section:last-child {
 
 .page-heading {
     text-align: center;
+    background-color: var(--primary);
+    color: var(--background);
 }
 
 .page-heading h2 {
@@ -142,12 +167,13 @@ main section:last-child {
 /* Sidebar */
 aside {
     flex: 1;
-    border: 3px solid black;
+    border: 3px solid var(--primary);
     padding: 15px;
+    background-color: var(--background);
 }
 
 .quick-links {
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
     padding: 20px;
     margin-bottom: 15px;
 }
@@ -156,12 +182,15 @@ aside {
     text-align: center;
     margin-bottom: 15px;
     font-size: 18px;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .quick-links ul {
     list-style: none;
-    border: 2px solid black;
+    border: 2px solid var(--accent);
     padding: 20px;
+    background-color: var(--background);
 }
 
 .quick-links ul li {
@@ -170,12 +199,16 @@ aside {
 
 .quick-links ul li:before {
     content: "- ";
+    color: var(--accent);
 }
 
 /* Footer */
 footer {
-    border: 2px solid black;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--background);
     padding: 20px;
+    text-align: center;
 }
 
 footer p {
@@ -183,10 +216,140 @@ footer p {
 }
 
 footer a {
-    color: #0066cc;
+    color: var(--secondary);
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: var(--accent);
+}
+
+/* Form Container */
+.form-container {
+    margin-bottom: 20px;
+}
+
+/* Join Form */
+.join-form {
+    border: 3px solid var(--primary);
+    padding: 30px;
+    background-color: var(--background);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.form-header h2 {
+    font-size: 24px;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.form-header p {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* Text Inputs and Selects */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--text);
+    background-color: var(--background);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radio and Checkbox Groups */
+.radio-group,
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.radio-option,
+.checkbox-option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.radio-option label,
+.checkbox-option label {
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Submit Button */
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--secondary);
+}
+
+.form-submit button {
+    padding: 15px 60px;
+    background-color: var(--background);
+    color: var(--text);
+    border: 2px solid var(--text);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.form-submit button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+    border-color: var(--primary);
 }
