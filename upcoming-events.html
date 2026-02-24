@@ -5,31 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Events - Blockchain at ASU</title>
+    <meta name="description"
+        content="Stay updated with the latest blockchain general meetings, hackathons, and networking events at Arizona State University.">
+    <meta name="keywords" content="ASU Events, Blockchain Meetings, Web3 Hackathons, Sun Devil Sync">
+    <meta name="author" content="Blockchain at ASU">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sleestk.github.io/upcoming-events.html">
+    <meta property="og:title" content="Upcoming Events - Blockchain at ASU">
+    <meta property="og:description" content="Join our next event and connect with the blockchain community at ASU.">
+    <meta property="og:image" content="images/meeting1.png">
+
     <link rel="stylesheet" href="style.css">
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="images/BlockchainASULogo.png" as="image">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo">
-        </div>
-        <div class="header-title">
-            <h1>Blockchain at ASU</h1>
-        </div>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo" width="50" height="50">
+        </a>
+        <h1 class="site-title">Blockchain at ASU</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="upcoming-events.html" class="active">Upcoming Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-the-team.html">About the Team</a></li>
-            <li><a href="what-we-do.html">What We Do</a></li>
-            <li><a href="upcoming-events.html">Upcoming Events</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-        </ul>
-    </nav>
 
     <!-- Main Content Container -->
     <div class="container">
@@ -42,28 +50,45 @@
 
             <!-- Text Content Area -->
             <section class="text-content">
-                <p>Promotes future events with dates, times, and descriptions sourced from Sun Devil Sync, along with
-                    promotional media.</p>
+                <h3>Our Event Schedule</h3>
+                <p>Join us for our upcoming workshops, speaker series, and networking events. Find more details and RSVP
+                    on Sun Devil Sync.</p>
+                <p>Our events are designed to be inclusive and accessible to all ASU students, regardless of their
+                    major or current level of blockchain knowledge. We encourage everyone to attend and participate!</p>
+
+                <div class="event-card">
+                    <h4><a href="https://sundevilcentral.eoss.asu.edu/basu/rsvp_boot?id=388524" target="_blank"
+                            class="underline-link">Blockchain at ASU General Meeting #1</a>
+                    </h4>
+                    <p class="meta-text"><strong>Time:</strong> 10/29/2025 at
+                        5PM | <strong>Location:</strong> Durham Hall 109</p>
+                    <p>This will be a general meeting to learn about Blockchain At ASU: what we have planned and
+                        opportunities for people.</p>
+                    <div class="highlight-box event-highlight">
+                        <img src="images/meeting1.png" alt="Blockchain at ASU General Meeting #1 Event Graphic"
+                            class="fluid-image" loading="lazy" width="600" height="400">
+                    </div>
+                </div>
+
+                <div class="event-card" style="margin-bottom: 15px;">
+                    <h4><a href="https://sundevilcentral.eoss.asu.edu/CBC/feeds?type=event&amp;type_id=388192&amp;tab=details"
+                            target="_blank" class="underline-link">Claude Builder Club
+                            Hackathon</a></h4>
+                    <p class="meta-text"><strong>Time:</strong> Sat, Nov 8,
+                        2025 10:00 AM – Sun, Nov 9, 2025 4:00 PM MST (GMT-7) | <strong>Location:</strong> Memorial Union
+                        Pima RM. 230</p>
+                    <p>This is a multi interdisciplinary event including a hackathon + build-a-thon.</p>
+                    <div class="highlight-box event-highlight">
+                        <img src="images/hackathonEvent.jpeg" alt="Claude Builder Club Hackathon Event Graphic"
+                            class="fluid-image" loading="lazy" width="600" height="400">
+                    </div>
+                </div>
             </section>
         </main>
-
-        <!-- Sidebar -->
-        <aside>
-            <section class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="upcoming-events.html">Upcoming Events</a></li>
-                    <li><a href="what-we-do.html">Past Projects</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="join-us.html">Contact Info</a></li>
-                </ul>
-            </section>
-        </aside>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Footer:</p>
         <p>Contact: blockchainatasu@gmail.com | <a href="https://www.linkedin.com/company/blockchain-at-asu/"
                 target="_blank">Connect with us on LinkedIn</a></p>
         <p>Copyright &copy; 2025 Blockchain at ASU</p>

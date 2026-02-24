@@ -5,31 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Blockchain at ASU</title>
+    <meta name="description"
+        content="Technical guides and stack comparisons for Ethereum, Solana, and more. Essential resources for ASU blockchain developers.">
+    <meta name="keywords" content="Blockchain Resources, Solidity, Rust, MetaMask, Ethereum, Solana, Web3 Development">
+    <meta name="author" content="Blockchain at ASU">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sleestk.github.io/resources.html">
+    <meta property="og:title" content="Blockchain Resources - ASU">
+    <meta property="og:description" content="Learn the tools of the trade and compare top blockchain platforms.">
+    <meta property="og:image" content="images/ethereum.svg">
+
     <link rel="stylesheet" href="style.css">
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="images/BlockchainASULogo.png" as="image">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo">
-        </div>
-        <div class="header-title">
-            <h1>Blockchain at ASU</h1>
-        </div>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo" width="50" height="50">
+        </a>
+        <h1 class="site-title">Blockchain at ASU</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-the-team.html">About the Team</a></li>
-            <li><a href="what-we-do.html">What We Do</a></li>
-            <li><a href="upcoming-events.html">Upcoming Events</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-        </ul>
-    </nav>
 
     <!-- Main Content Container -->
     <div class="container">
@@ -42,28 +50,92 @@
 
             <!-- Text Content Area -->
             <section class="text-content">
-                <p>A collection of blockchain logos (SUI, Ethereum, Polygon) and guides on tech stacks (Solidity, Rust,
-                    Move, MetaMask).</p>
+                <h3>Tech Stack & Guides</h3>
+                <p>Get up to speed with the most common tools and languages used in blockchain development. Here are the
+                    technologies we focus on:</p>
+                <p>These platforms and languages represent the backbone of modern Web3 development. By mastering these,
+                    our members can build scalable, secure, and efficient decentralized applications across multiple
+                    ecosystems.</p>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <h4>Ethereum / Solidity</h4>
+                        <p class="meta-text">The standard for EVM-compatible smart contracts.</p>
+                    </div>
+                    <div class="team-card">
+                        <h4>Solana / Rust</h4>
+                        <p class="meta-text">High-speed blockchain development using the Rust programming
+                            language.</p>
+                    </div>
+                    <div class="team-card">
+                        <h4>MetaMask</h4>
+                        <p class="meta-text">Connect your dApps to standard web browser wallets.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box vertical-margin flex-container">
+                    <img src="images/ethereum.svg" alt="Ethereum Logo" class="logo-small" loading="lazy" width="60"
+                        height="60">
+                    <img src="images/solidity.svg" alt="Solidity Logo" class="logo-small" loading="lazy" width="60"
+                        height="60">
+                    <img src="images/solana.svg" alt="Solana Logo" class="logo-small" loading="lazy" width="60"
+                        height="60">
+                    <img src="images/rust.svg" alt="Rust Logo" class="logo-small" loading="lazy" width="60" height="60">
+                    <img src="images/metamask.svg" alt="MetaMask Logo" class="logo-small" loading="lazy" width="60"
+                        height="60">
+                </div>
+
+                <!-- Platform Comparison Table -->
+                <section class="comparison-section">
+                    <h3>Platform Comparison</h3>
+                    <p>Choosing the right blockchain for your project depends on your specific needs for speed, cost,
+                        and security. The table below compares the major platforms we support to help you make an
+                        informed decision for your next dApp.</p>
+                    <div class="table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Platform</th>
+                                    <th>Consensus</th>
+                                    <th>Language</th>
+                                    <th>Native Wallet</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td>Proof of Stake</td>
+                                    <td>Solidity</td>
+                                    <td>MetaMask</td>
+                                </tr>
+                                <tr>
+                                    <td>Solana</td>
+                                    <td>Proof of History</td>
+                                    <td>Rust</td>
+                                    <td>Phantom</td>
+                                </tr>
+                                <tr>
+                                    <td>Sui</td>
+                                    <td>DPoS (Bulla-shark)</td>
+                                    <td>Move</td>
+                                    <td>Sui Wallet</td>
+                                </tr>
+                                <tr>
+                                    <td>Polygon</td>
+                                    <td>Proof of Stake</td>
+                                    <td>Solidity</td>
+                                    <td>MetaMask</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </section>
         </main>
-
-        <!-- Sidebar -->
-        <aside>
-            <section class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="upcoming-events.html">Upcoming Events</a></li>
-                    <li><a href="what-we-do.html">Past Projects</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="join-us.html">Contact Info</a></li>
-                </ul>
-            </section>
-        </aside>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Footer:</p>
         <p>Contact: blockchainatasu@gmail.com | <a href="https://www.linkedin.com/company/blockchain-at-asu/"
                 target="_blank">Connect with us on LinkedIn</a></p>
         <p>Copyright &copy; 2025 Blockchain at ASU</p>

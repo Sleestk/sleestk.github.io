@@ -5,160 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Us - Blockchain at ASU</title>
+    <meta name="description"
+        content="Become a member of Blockchain at ASU. Fill out our signup form to get involved in the Web3 community at Arizona State University.">
+    <meta name="keywords" content="Join ASU Club, Blockchain Membership, Web3 Student Org, Arizona State University">
+    <meta name="author" content="Blockchain at ASU">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sleestk.github.io/join-us.html">
+    <meta property="og:title" content="Join Blockchain at ASU">
+    <meta property="og:description"
+        content="Ready to build the future? Sign up to join the largest blockchain community at ASU.">
+    <meta property="og:image" content="images/BlockchainASULogo.png">
+
     <link rel="stylesheet" href="style.css">
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="images/BlockchainASULogo.png" as="image">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo">
-        </div>
-        <div class="header-title">
-            <h1>Blockchain at ASU</h1>
-        </div>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="images/BlockchainASULogo.png" alt="Blockchain at ASU Logo" width="50" height="50">
+        </a>
+        <h1 class="site-title">Blockchain at ASU</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="upcoming-events.html">Upcoming Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="join-us.html" class="active">Join Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-the-team.html">About the Team</a></li>
-            <li><a href="what-we-do.html">What We Do</a></li>
-            <li><a href="upcoming-events.html">Upcoming Events</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-        </ul>
-    </nav>
-
     <!-- Main Content Container -->
-    <div class="form-container">
-        <!-- Form Section -->
-        <section class="join-form">
-            <div class="form-header">
-                <h2>Join Blockchain at ASU</h2>
-                <p>Interested in learning about blockchain technology?<br>Fill out the form below to join our community!
-                </p>
-            </div>
-
-            <form action="#" method="post">
-                <!-- Full Name -->
-                <div class="form-group">
-                    <label for="fullname">Full Name: *</label>
-                    <input type="text" id="fullname" name="fullname" required>
+    <main>
+        <div class="form-container">
+            <!-- Form Section -->
+            <section class="join-form">
+                <div class="form-header">
+                    <h2>Join Blockchain at ASU</h2>
+                    <p>Interested in learning about blockchain technology?<br>Fill out the form below to join our
+                        community!
+                    </p>
                 </div>
 
-                <!-- ASU Email -->
-                <div class="form-group">
-                    <label for="email">ASU Email: *</label>
-                    <input type="email" id="email" name="email" placeholder="@asu.edu" required>
-                </div>
+                <form action="#" method="post">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullname">Full Name: *</label>
+                        <input type="text" id="fullname" name="fullname" required aria-required="true">
+                    </div>
 
-                <!-- Major -->
-                <div class="form-group">
-                    <label for="major">Major: *</label>
-                    <select id="major" name="major" required>
-                        <option value="">Select Your Major ↓</option>
-                        <option value="computer-science">Computer Science</option>
-                        <option value="software-engineering">Software Engineering</option>
-                        <option value="business">Business</option>
-                        <option value="finance">Finance</option>
-                        <option value="engineering">Engineering</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+                    <!-- ASU Email -->
+                    <div class="form-group">
+                        <label for="email">ASU Email: *</label>
+                        <input type="email" id="email" name="email" placeholder="@asu.edu" required
+                            aria-required="true">
+                    </div>
 
-                <!-- Year -->
-                <div class="form-group">
-                    <label for="year">Year: *</label>
-                    <select id="year" name="year" required>
-                        <option value="">Select Your Year ↓</option>
-                        <option value="freshman">Freshman</option>
-                        <option value="sophomore">Sophomore</option>
-                        <option value="junior">Junior</option>
-                        <option value="senior">Senior</option>
-                        <option value="graduate">Graduate</option>
-                    </select>
-                </div>
+                    <!-- Major -->
+                    <div class="form-group">
+                        <label for="major">Major: *</label>
+                        <select id="major" name="major" required aria-required="true">
+                            <option value="">Select Your Major ↓</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="software-engineering">Software Engineering</option>
+                            <option value="business">Business</option>
+                            <option value="finance">Finance</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
 
-                <!-- Blockchain Experience Level -->
-                <div class="form-group">
-                    <label>Blockchain Experience Level: *</label>
-                    <div class="radio-group">
-                        <div class="radio-option">
-                            <input type="radio" id="exp-none" name="experience" value="none" required>
-                            <label for="exp-none">No experience - just curious!</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="exp-beginner" name="experience" value="beginner">
-                            <label for="exp-beginner">Beginner - some basic knowledge</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="exp-intermediate" name="experience" value="intermediate">
-                            <label for="exp-intermediate">Intermediate - familiar with concepts</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="exp-advanced" name="experience" value="advanced">
-                            <label for="exp-advanced">Advanced - have worked on projects</label>
+                    <!-- Year -->
+                    <div class="form-group">
+                        <label for="year">Year: *</label>
+                        <select id="year" name="year" required aria-required="true">
+                            <option value="">Select Your Year ↓</option>
+                            <option value="freshman">Freshman</option>
+                            <option value="sophomore">Sophomore</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                            <option value="graduate">Graduate</option>
+                        </select>
+                    </div>
+
+                    <!-- Blockchain Experience Level -->
+                    <div class="form-group">
+                        <label>Blockchain Experience Level: *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="exp-none" name="experience" value="none" required
+                                    aria-required="true">
+                                <label for="exp-none">No experience - just curious!</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="exp-beginner" name="experience" value="beginner">
+                                <label for="exp-beginner">Beginner - some basic knowledge</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="exp-intermediate" name="experience" value="intermediate">
+                                <label for="exp-intermediate">Intermediate - familiar with concepts</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="exp-advanced" name="experience" value="advanced">
+                                <label for="exp-advanced">Advanced - have worked on projects</label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Areas of Interest -->
-                <div class="form-group">
-                    <label>Areas of Interest: (check all that apply)</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-smart-contracts" name="interests"
-                                value="smart-contracts">
-                            <label for="interest-smart-contracts">Smart Contracts</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-crypto" name="interests" value="crypto-defi">
-                            <label for="interest-crypto">Cryptocurrency &amp; DeFi</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-nfts" name="interests" value="nfts">
-                            <label for="interest-nfts">NFTs &amp; Digital Assets</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-enterprise" name="interests" value="enterprise">
-                            <label for="interest-enterprise">Enterprise Blockchain</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-development" name="interests" value="development">
-                            <label for="interest-development">Blockchain Development</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input type="checkbox" id="interest-networking" name="interests" value="networking">
-                            <label for="interest-networking">Networking &amp; Career Opportunities</label>
+                    <!-- Areas of Interest -->
+                    <div class="form-group">
+                        <label>Areas of Interest: (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-smart-contracts" name="interests"
+                                    value="smart-contracts">
+                                <label for="interest-smart-contracts">Smart Contracts</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-crypto" name="interests" value="crypto-defi">
+                                <label for="interest-crypto">Cryptocurrency &amp; DeFi</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-nfts" name="interests" value="nfts">
+                                <label for="interest-nfts">NFTs &amp; Digital Assets</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-enterprise" name="interests" value="enterprise">
+                                <label for="interest-enterprise">Enterprise Blockchain</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-development" name="interests" value="development">
+                                <label for="interest-development">Blockchain Development</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="interest-networking" name="interests" value="networking">
+                                <label for="interest-networking">Networking &amp; Career Opportunities</label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- How did you hear about us -->
-                <div class="form-group">
-                    <label for="referral">How did you hear about us?</label>
-                    <input type="text" id="referral" name="referral">
-                </div>
+                    <!-- How did you hear about us -->
+                    <div class="form-group">
+                        <label for="referral">How did you hear about us?</label>
+                        <input type="text" id="referral" name="referral">
+                    </div>
 
-                <!-- Questions or Comments -->
-                <div class="form-group">
-                    <label for="comments">Questions or Comments: (optional)</label>
-                    <textarea id="comments" name="comments" rows="5"></textarea>
-                </div>
+                    <!-- Questions or Comments -->
+                    <div class="form-group">
+                        <label for="comments">Questions or Comments: (optional)</label>
+                        <textarea id="comments" name="comments" rows="5"></textarea>
+                    </div>
 
-                <!-- Submit Button -->
-                <div class="form-submit">
-                    <button type="submit">Submit Form</button>
-                </div>
-            </form>
-        </section>
-    </div>
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit">Submit Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>Footer:</p>
         <p>Contact: blockchainatasu@gmail.com | <a href="https://www.linkedin.com/company/blockchain-at-asu/"
                 target="_blank">Connect with us on LinkedIn</a></p>
         <p>Copyright &copy; 2025 Blockchain at ASU</p>
